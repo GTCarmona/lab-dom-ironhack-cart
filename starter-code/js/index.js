@@ -1,6 +1,7 @@
 function deleteItem(e){
-
-  
+  let btnToDelete = e.currentTarget;
+  let divToDelete = btnToDelete.parentNode.parentNode;
+  divToDelete.parentNode.removeChild(divToDelete);
 }
 
 function getPriceByProduct(itemNode){
